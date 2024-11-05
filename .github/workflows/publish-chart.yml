@@ -1,0 +1,29 @@
+name: Package and Publish Helm Chart
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Helm
+        uses: helm/setup-helm@v1
+        with:
+          helm-version: '3.2.1'
+
+      - name: Package Helm chart
+        run: helm package . -d charts
+
+      - name: Upload chart to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./charts
+          publish_branch: gh-pages
+          publish_dir: ./charts
