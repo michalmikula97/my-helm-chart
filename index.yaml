@@ -3,7 +3,7 @@ entries:
   dummy-fastapi:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-11-05T13:05:45.310624956+01:00"
+    created: "2024-11-05T13:14:21.882214748+01:00"
     description: A Helm chart for Kubernetes
     digest: f3af585704e3edf636743822fc90ec13c7f567e5f171cf2935c405bfb60109b6
     name: dummy-fastapi
@@ -11,4 +11,4 @@ entries:
     urls:
     - https://michalmikula97.github.io/my-helm-chart/charts/dummy-fastapi-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-05T13:05:45.308158306+01:00"
+generated: "2024-11-05T13:14:21.881533403+01:00"
