@@ -9,6 +9,6 @@ entries:
     name: dummy-fastapi
     type: application
     urls:
-    - https://michalmikula97.github.io/my-helm-chart/dummy-fastapi-0.1.0.tgz
+    - https://michalmikula97.github.io/my-helm-chart/charts/dummy-fastapi-0.1.0.tgz
     version: 0.1.0
 generated: "2024-11-05T13:05:45.308158306+01:00"
