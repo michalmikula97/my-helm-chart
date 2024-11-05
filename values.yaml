@@ -1,0 +1,9 @@
+image:
+  repository: michalmikula97/myapp-image
+  tag: "3.0"
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 8080
+  targetPort: 8080
